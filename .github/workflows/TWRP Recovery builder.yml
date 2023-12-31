@@ -14,9 +14,9 @@ on:
 
 env:
   MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
-  DEVICE: X655C
-  DT_LINK: https://github.com/kies83/twrp_infinix_X655C
-  DT_PATH: device/infinix/X655C
+  DEVICE: a8sqltechn
+  DT_LINK: https://github.com/wuyinliangshu/android_device_samsung_a8sqltechn
+  DT_PATH: device/samsung/a8sqltechn
   TARGET: recoveryimage
   TZ: Asia/Karachi
 
@@ -63,6 +63,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          with:
           tag_name: TWRP_10.0
-          name: TWRP-X655C
+          name: TWRP-a8sqltechn
           files: | 
-            work/out/target/product/X655C/recovery.img
+            work/out/target/product/a8sqltechn/recovery.img
